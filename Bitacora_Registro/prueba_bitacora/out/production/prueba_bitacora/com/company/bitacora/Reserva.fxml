@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1280.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controladores.ReservaControlador">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1280.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Imagen1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="554.0" layoutX="9.0" layoutY="128.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1262.0" />
+      <ImageView fx:id="img1" fitHeight="100.0" fitWidth="200.0" layoutX="45.0" layoutY="163.0" onMouseClicked="#reservar1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image></ImageView>
+      <ImageView fx:id="img2" fitHeight="100.0" fitWidth="200.0" layoutX="201.0" layoutY="163.0" onMouseClicked="#reservar2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image></ImageView>
+      <ImageView fx:id="img3" fitHeight="100.0" fitWidth="200.0" layoutX="357.0" layoutY="163.0" onMouseClicked="#reservar3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#404040" height="44.0" layoutX="9.0" layoutY="85.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1262.0" />
+      <ImageView fx:id="img4" fitHeight="100.0" fitWidth="200.0" layoutX="513.0" layoutY="163.0" onMouseClicked="#reservar4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image></ImageView>
+      <ImageView fx:id="img5" fitHeight="100.0" fitWidth="200.0" layoutX="669.0" layoutY="163.0" onMouseClicked="#reservar5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff810a" height="44.0" layoutX="9.0" layoutY="682.0" opacity="0.8" stroke="TRANSPARENT" strokeType="INSIDE" width="1262.0" />
+      <Circle fill="MEDIUMSEAGREEN" layoutX="1246.0" layoutY="703.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="button-sala" />
+      <Label layoutX="448.0" layoutY="14.0" stylesheets="@../estilos/hojaEstilo.css" text="Centro de cómputo 1" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img6" fitHeight="100.0" fitWidth="200.0" layoutX="825.0" layoutY="163.0" onMouseClicked="#reservar6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img7" fitHeight="100.0" fitWidth="126.0" layoutX="981.0" layoutY="163.0" onMouseClicked="#reservar7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img13" fitHeight="100.0" fitWidth="126.0" layoutX="669.0" layoutY="288.0" onMouseClicked="#reservar13" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img19" fitHeight="100.0" fitWidth="126.0" layoutX="351.0" layoutY="415.0" onMouseClicked="#reservar19" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img8" fitHeight="100.0" fitWidth="126.0" layoutX="1137.0" layoutY="163.0" onMouseClicked="#reservar8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img9" fitHeight="100.0" fitWidth="126.0" layoutX="45.0" layoutY="288.0" onMouseClicked="#reservar9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img10" fitHeight="100.0" fitWidth="126.0" layoutX="201.0" layoutY="288.0" onMouseClicked="#reservar10" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img11" fitHeight="100.0" fitWidth="126.0" layoutX="357.0" layoutY="288.0" onMouseClicked="#reservar11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img12" fitHeight="100.0" fitWidth="126.0" layoutX="513.0" layoutY="288.0" onMouseClicked="#reservar12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img18" fitHeight="100.0" fitWidth="126.0" layoutX="201.0" layoutY="415.0" onMouseClicked="#reservar18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img17" fitHeight="100.0" fitWidth="126.0" layoutX="45.0" layoutY="415.0" onMouseClicked="#reservar17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img16" fitHeight="100.0" fitWidth="126.0" layoutX="1131.0" layoutY="288.0" onMouseClicked="#reservar16" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img15" fitHeight="100.0" fitWidth="126.0" layoutX="981.0" layoutY="288.0" onMouseClicked="#reservar15" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img14" fitHeight="100.0" fitWidth="126.0" layoutX="825.0" layoutY="288.0" onMouseClicked="#reservar14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img20" fitHeight="100.0" fitWidth="126.0" layoutX="513.0" layoutY="415.0" onMouseClicked="#reservar20" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img21" fitHeight="100.0" fitWidth="126.0" layoutX="669.0" layoutY="415.0" onMouseClicked="#reservar21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img22" fitHeight="100.0" fitWidth="126.0" layoutX="825.0" layoutY="415.0" onMouseClicked="#reservar22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img23" fitHeight="100.0" fitWidth="126.0" layoutX="979.0" layoutY="415.0" onMouseClicked="#reservar23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img24" fitHeight="100.0" fitWidth="126.0" layoutX="1131.0" layoutY="415.0" onMouseClicked="#reservar24" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/e.libre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="157.0" fitWidth="169.0" layoutX="-9.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sinfondo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="691.0" text="No disponible" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="197.0" layoutY="692.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Imagen7.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="18.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Imagen6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="689.0" text="Disponible" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="689.0" text="Fuera de servicio" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="395.0" layoutY="692.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Imagen5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img32" fitHeight="100.0" fitWidth="126.0" layoutX="1126.0" layoutY="540.0" onMouseClicked="#reservar32" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img31" fitHeight="100.0" fitWidth="126.0" layoutX="974.0" layoutY="540.0" onMouseClicked="#reservar31" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img30" fitHeight="100.0" fitWidth="126.0" layoutX="820.0" layoutY="540.0" onMouseClicked="#reservar30" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img29" fitHeight="100.0" fitWidth="126.0" layoutX="664.0" layoutY="540.0" onMouseClicked="#reservar29" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img28" fitHeight="100.0" fitWidth="126.0" layoutX="508.0" layoutY="540.0" onMouseClicked="#reservar28" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img25" fitHeight="100.0" fitWidth="126.0" layoutX="40.0" layoutY="540.0" onMouseClicked="#reservar25" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img26" fitHeight="100.0" fitWidth="126.0" layoutX="196.0" layoutY="540.0" onMouseClicked="#reservar26" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img27" fitHeight="100.0" fitWidth="126.0" layoutX="346.0" layoutY="540.0" onMouseClicked="#reservar27" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="num1" layoutX="92.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num2" layoutX="246.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num3" layoutX="402.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num4" layoutX="558.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num5" layoutX="714.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num6" layoutX="870.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num7" layoutX="1024.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num8" layoutX="1182.0" layoutY="263.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num81" layoutX="1182.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num71" layoutX="1024.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num61" layoutX="870.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num51" layoutX="714.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num41" layoutX="558.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num31" layoutX="402.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num21" layoutX="246.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num11" layoutX="92.0" layoutY="395.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num111" layoutX="92.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num211" layoutX="246.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num311" layoutX="402.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num411" layoutX="558.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num511" layoutX="714.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num611" layoutX="870.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num711" layoutX="1024.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num811" layoutX="1182.0" layoutY="515.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num8111" layoutX="1182.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num7111" layoutX="1024.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num6111" layoutX="870.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num5111" layoutX="714.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num4111" layoutX="558.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num3111" layoutX="402.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num2111" layoutX="246.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="num1111" layoutX="92.0" layoutY="642.0" text="1">
+         <font>
+            <Font name="Tw Cen MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSala" layoutX="1090.0" layoutY="86.0" onMouseClicked="#cambiarSala1" onMousePressed="#cambiarSala1" prefHeight="36.0" prefWidth="86.0" stylesheets="@../estilos/hojaEstilo.css" text="Sala 1" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tw Cen MT" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="labelSala2" layoutX="1179.0" layoutY="86.0" onMouseClicked="#cambiarSala2" onMousePressed="#cambiarSala1" prefHeight="36.0" prefWidth="86.0" stylesheets="@../estilos/hojaEstilo.css" text="Sala 2" textFill="#d0cfcf" underline="true">
+         <font>
+            <Font name="Tw Cen MT" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Label>
+      <Button layoutX="32.0" layoutY="172.0" mnemonicParsing="false" onAction="#reservar1" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="1221.0" layoutY="677.0" onMouseClicked="#cerrarSesion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/shutdown.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="32.0" layoutY="300.0" mnemonicParsing="false" onAction="#reservar9" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="32.0" layoutY="425.0" mnemonicParsing="false" onAction="#reservar17" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn1" layoutX="32.0" layoutY="549.0" mnemonicParsing="false" onAction="#reservar25" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn2" layoutX="186.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar26" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="186.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar18" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="186.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar10" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="186.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar2" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="342.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar3" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="342.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar11" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="342.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar19" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn3" layoutX="342.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar27" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn4" layoutX="497.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar28" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="497.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar20" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="497.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar12" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="497.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar4" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="655.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar5" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="655.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar13" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="655.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar21" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn5" layoutX="655.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar29" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn6" layoutX="811.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar30" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="811.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar22" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="811.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar14" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="811.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar6" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="968.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar7" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="968.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar15" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="968.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar23" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn8" layoutX="968.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar31" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn9" layoutX="1123.0" layoutY="550.0" mnemonicParsing="false" onAction="#reservar32" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1123.0" layoutY="426.0" mnemonicParsing="false" onAction="#reservar24" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1123.0" layoutY="301.0" mnemonicParsing="false" onAction="#reservar16" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1123.0" layoutY="173.0" mnemonicParsing="false" onAction="#reservar8" opacity="0.1" prefHeight="113.0" prefWidth="126.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../estilos/hojaEstilo.css" />
+      <URL value="@../estilos/centroPanel.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#keyPressed" onKeyReleased="#keyPressed" onKeyTyped="#keyPressed" prefHeight="450.0" prefWidth="660.0" style="-fx-background-color: #ff810a;" stylesheets="@../estilos/alertasHover.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controladores.ReservaRapidaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMSEAGREEN" height="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="660.0" />
+      <Label layoutX="220.0" layoutY="-2.0" text="Bienvenido" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="48.0" />
+         </font>
+      </Label>
+      <Circle fill="MEDIUMSEAGREEN" layoutX="331.0" layoutY="185.0" radius="74.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label fx:id="maquina" layoutX="283.0" layoutY="129.0" prefHeight="112.0" prefWidth="97.0" text="10" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="86.0" />
+         </font></Label>
+      <Label layoutX="155.0" layoutY="68.0" text="Tenemos disponible el equipo" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="sala" layoutX="299.0" layoutY="271.0" prefHeight="30.0" prefWidth="76.0" text="Sala 1" textAlignment="CENTER" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tw Cen MT" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="76.0" fitWidth="97.0" layoutX="30.0" layoutY="325.0" onKeyPressed="#keyPressed" onMouseClicked="#cerrar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/checkmark-Cancel-redSINFONDO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="296.0" layoutY="328.0" onMouseClicked="#yoElijo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/ElijoyoSINFONDO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="89.0" layoutX="541.0" layoutY="325.0" onMouseClicked="#aceptar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/checkmark-ok-greenSINFONDO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="54.0" layoutY="407.0" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="407.0" text="Yo elijo" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="529.0" layoutY="407.0" text="Si La Quiero" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="600.0" layoutY="8.0" mnemonicParsing="false" onKeyPressed="#keyPressed" prefHeight="32.0" prefWidth="33.0" style="-fx-background-color: #ff810a;" />
+      <Button layoutX="27.0" layoutY="328.0" mnemonicParsing="false" onAction="#cerrar" opacity="0.25" prefHeight="76.0" prefWidth="97.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="281.0" layoutY="328.0" mnemonicParsing="false" onAction="#yoElijo" opacity="0.25" prefHeight="76.0" prefWidth="97.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Button layoutX="537.0" layoutY="328.0" mnemonicParsing="false" onAction="#aceptar" opacity="0.25" prefHeight="76.0" prefWidth="97.0" styleClass="buttonEquipo">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

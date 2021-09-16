@@ -1,0 +1,16 @@
+.buttonEquipo
+{
+    -fx-padding: 5 22 5 22;
+    -fx-background-radius: 10;
+    -fx-font-family: "Tw Cen MT", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-color: #ff810a;
+}
+
+.button:hover
+{
+    -fx-background-color: #fff;
+}
+

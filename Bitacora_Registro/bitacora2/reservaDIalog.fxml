@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#keyPressed" onKeyReleased="#keyPressed" onKeyTyped="#keyPressed" prefHeight="286.0" prefWidth="308.0" style="-fx-background-color: #ff810a;" styleClass="background" stylesheets="@../estilos/nuevo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controladores.ReservaDIalogController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMSEAGREEN" height="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="308.0" />
+        <TextField fx:id="horaE" editable="false" layoutX="79.0" layoutY="140.0" prefHeight="35.0" prefWidth="66.0" styleClass="campos" />
+        <TextField fx:id="Equipo" editable="false" layoutX="208.0" layoutY="140.0" prefHeight="35.0" prefWidth="66.0" styleClass="campos" />
+        <Pane layoutX="35.0" layoutY="72.0" prefHeight="35.0" prefWidth="45.0" style="-fx-background-color: #3cb371;" styleClass="background-detalles">
+            <children>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/icons8-read-online-480.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="35.0" layoutY="140.0" prefHeight="35.0" prefWidth="45.0" style="-fx-background-color: #3cb371;" styleClass="background-detalles">
+            <children>
+                <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/clock.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane layoutX="165.0" layoutY="140.0" prefHeight="35.0" prefWidth="45.0" style="-fx-background-color: #3cb371;" styleClass="background-detalles">
+            <children>
+                <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="5.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/icons8-monitor-480.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label layoutX="59.0" layoutY="111.0" styleClass="label-texto" text="Hora entrada" textFill="WHITE">
+            <font>
+                <Font name="Tw Cen MT Bold Italic" size="14.0" />
+            </font></Label>
+        <Label layoutX="59.0" layoutY="8.0" text="Datos a guardar" textFill="WHITE">
+            <font>
+                <Font name="Tw Cen MT Bold" size="28.0" />
+            </font></Label>
+        <Button layoutX="22.0" layoutY="213.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="54.0" prefWidth="108.0" text="Cancelar&#10;(ESC)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+        <Button layoutX="179.0" layoutY="213.0" mnemonicParsing="false" onAction="#reservar" prefHeight="54.0" prefWidth="108.0" text="Aceptar&#10;(ENTER)" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+        <Label layoutX="187.0" layoutY="111.0" styleClass="label-texto" text="Num Maquina" textFill="WHITE">
+            <font>
+                <Font name="Tw Cen MT Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombre" editable="false" layoutX="80.0" layoutY="71.0" prefHeight="35.0" prefWidth="194.0" />
+    </children>
+</AnchorPane>
