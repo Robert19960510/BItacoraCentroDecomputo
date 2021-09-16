@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Bitacora2.0">
-    <output-path>$PROJECT_DIR$/out/artifacts/Bitacora2_0</output-path>
-    <root id="archive" name="prueba_bitacora.jar">
-      <element id="module-output" name="prueba_bitacora" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../cosas para eso/postgresql-42.2.4.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
