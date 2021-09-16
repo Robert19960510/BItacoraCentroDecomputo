@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onKeyPressed="#keyPressed" onKeyReleased="#keyPressed" onKeyTyped="#keyPressed" prefHeight="322.0" prefWidth="553.0" style="-fx-background-color: #ff810a;" stylesheets="@../estilos/jover.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controladores.SalirController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMSEAGREEN" height="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="553.0" />
+      <Button layoutX="420.0" layoutY="271.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="37.0" prefWidth="102.0" styleClass="buttonMensaje" text="Aceptar" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="titulo" layoutX="219.0" layoutY="9.0" text="¿SALIR?" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="167.0" fitWidth="179.0" layoutX="365.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-exit-filled-500.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usuario" layoutX="35.0" layoutY="109.0" prefHeight="37.0" prefWidth="259.0" />
+      <TextField fx:id="contraseña" layoutX="35.0" layoutY="196.0" prefHeight="37.0" prefWidth="259.0" />
+      <Button layoutX="23.0" layoutY="271.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="37.0" prefWidth="102.0" styleClass="buttonMensaje" text="Cancelar" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Tw Cen MT" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="titulo1" layoutX="39.0" layoutY="74.0" text="Usuario" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="titulo11" layoutX="35.0" layoutY="161.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
